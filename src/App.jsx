@@ -1,19 +1,20 @@
 import { useState } from 'react'
-import data from './data/data.json'
+import { useZones } from './hooks/useZones'
 import OnboardingPage from './pages/OnboardingPage'
 import MapPage from './pages/MapPage'
+import ZoneGalleryPage from './pages/ZoneGalleryPage'
 import ZoneDetailPage from './pages/ZoneDetailPage'
 import NavBar from './components/NavBar'
 
 function App() {
-  const [page, setPage] = useState('onboarding') // 'onboarding' | 'map' | 'detail'
+  const [page, setPage] = useState('onboarding') // 'onboarding' | 'map' | 'gallery' | 'detail'
   const [selectedZoneId, setSelectedZoneId] = useState(null)
   const [guestMode, setGuestMode] = useState(false)
 
-  const zones = data.zones
+  const { zones, loading, error } = useZones()
   const currentZone = zones.find((z) => z.id === selectedZoneId) ?? null
 
-  const handleStart = (name, org) => {
+  const handleStart = () => {
     setGuestMode(false)
     setPage('map')
   }
@@ -25,7 +26,15 @@ function App() {
 
   const handleSelectZone = (zoneId) => {
     setSelectedZoneId(zoneId)
+    setPage('gallery')
+  }
+
+  const handleEnterDetail = () => {
     setPage('detail')
+  }
+
+  const handleBackFromDetail = () => {
+    setPage('gallery')
   }
 
   const handleHome = () => {
@@ -34,6 +43,14 @@ function App() {
   }
 
   const handleCallStaff = () => {
+    const zoneName = currentZone?.label ?? '쇼룸'
+    fetch('https://wh.jandi.com/connect-api/webhook/33159708/82e8a048cd83eafbb87666405f2f439f', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        body: `현재 [${zoneName}]에서 고객이 상담을 요청했습니다!`,
+      }),
+    })
     alert('직원을 호출했습니다. 잠시만 기다려 주세요.')
   }
 
@@ -47,11 +64,23 @@ function App() {
         {page === 'onboarding' && (
           <OnboardingPage onStart={handleStart} onGuest={handleGuest} />
         )}
-        {page === 'map' && (
+        {page === 'map' && loading && (
+          <div className="min-h-screen flex items-center justify-center text-[#515151] text-sm">
+            불러오는 중...
+          </div>
+        )}
+        {page === 'map' && !loading && (
           <MapPage zones={zones} onZoneSelect={handleSelectZone} />
         )}
+        {page === 'gallery' && currentZone && (
+          <ZoneGalleryPage
+            zone={currentZone}
+            onEnterDetail={handleEnterDetail}
+            onBack={handleHome}
+          />
+        )}
         {page === 'detail' && currentZone && (
-          <ZoneDetailPage zone={currentZone} onBack={handleHome} />
+          <ZoneDetailPage zone={currentZone} onBack={handleBackFromDetail} />
         )}
       </div>
     </div>

@@ -1,12 +1,16 @@
-import Gallery from '../components/Gallery';
-import SpaceComment from '../components/SpaceComment';
-import ProductCard from '../components/ProductCard';
-import CTAButton from '../components/CTAButton';
+import { useState } from 'react'
+import Gallery from '../components/Gallery'
+import SpaceComment from '../components/SpaceComment'
+import ProductCard from '../components/ProductCard'
+import CTAButton from '../components/CTAButton'
+import ConsultingModal from '../components/ConsultingModal'
 
 export default function ZoneDetailPage({ zone, onBack }) {
-  if (!zone) return null;
+  const [modalOpen, setModalOpen] = useState(false)
 
-  const { label, images = [], comment, products = [] } = zone;
+  if (!zone) return null
+
+  const { label, images = [], comment, products = [] } = zone
 
   return (
     <div className="min-h-screen bg-[#F0F0F0] pb-14 font-['Pretendard',sans-serif]">
@@ -19,9 +23,7 @@ export default function ZoneDetailPage({ zone, onBack }) {
         >
           ←
         </button>
-        <span className="text-[16px] font-semibold text-[#282828]">
-          {label}
-        </span>
+        <span className="text-[16px] font-semibold text-[#282828]">{label}</span>
       </header>
 
       {/* 모바일: 1단 / lg: 2단 */}
@@ -51,8 +53,8 @@ export default function ZoneDetailPage({ zone, onBack }) {
           </div>
 
           {/* 모바일 전용 CTAButton */}
-          <div className="px-6 pt-6 lg:hidden">
-            <CTAButton />
+          <div className="lg:hidden">
+            <CTAButton onClick={() => setModalOpen(true)} />
           </div>
         </div>
 
@@ -61,10 +63,15 @@ export default function ZoneDetailPage({ zone, onBack }) {
           <SpaceComment comment={comment} />
 
           <div className="hidden lg:block">
-            <CTAButton />
+            <CTAButton onClick={() => setModalOpen(true)} />
           </div>
         </div>
       </div>
+
+      {/* 컨설팅 모달 */}
+      {modalOpen && (
+        <ConsultingModal zone={zone} onClose={() => setModalOpen(false)} />
+      )}
     </div>
-  );
+  )
 }

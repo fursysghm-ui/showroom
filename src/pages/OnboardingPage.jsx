@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { saveLead } from '../lib/saveLead'
 
 function OnboardingPage({ onStart, onGuest }) {
   const [name, setName] = useState('')
@@ -6,10 +7,16 @@ function OnboardingPage({ onStart, onGuest }) {
 
   const isReady = name.trim().length > 0
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     if (!isReady) return
+    await saveLead({ name: name.trim(), org: org.trim(), guestMode: false })
     onStart(name.trim(), org.trim())
+  }
+
+  const handleGuest = async () => {
+    await saveLead({ name: 'Guest', org: '', guestMode: true })
+    onGuest()
   }
 
   return (
@@ -75,8 +82,9 @@ function OnboardingPage({ onStart, onGuest }) {
         <div className="mt-6 text-center">
           <button
             type="button"
-            onClick={onGuest}
+            onClick={handleGuest}
             className="text-white/60 text-sm underline underline-offset-2 hover:text-white/80 transition-colors duration-200 cursor-pointer"
+            onClick={handleGuest}
           >
             Guest로 둘러보기 →
           </button>
