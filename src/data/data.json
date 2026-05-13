@@ -2,240 +2,146 @@
   "zones": [
     {
       "id": "zone-a",
-      "label": "A. 오픈 세미나존",
+      "label": "e. 오픈 세미나존",
       "position": { "x": 22, "y": 33 },
       "images": [
         "https://picsum.photos/seed/zone-a-1/800/600",
         "https://picsum.photos/seed/zone-a-2/800/600",
         "https://picsum.photos/seed/zone-a-3/800/600"
       ],
+      "layoutImage": "https://picsum.photos/seed/layout-a/800/600",
       "comment": "협업과 창의성을 극대화하는 모듈형 배치로 구성된 공간입니다. 다양한 팀 규모에 유연하게 대응할 수 있는 이동형 파티션과 라운드 테이블의 조합이 자유로운 커뮤니케이션을 유도합니다.",
       "modules": [
-        {
-          "id": "zone-a-mod-1",
-          "label": "4인 협업 세팅",
-          "imageUrl": "https://picsum.photos/seed/zone-a-m1/600/450"
-        },
-        {
-          "id": "zone-a-mod-2",
-          "label": "6인 라운드 배치",
-          "imageUrl": "https://picsum.photos/seed/zone-a-m2/600/450"
-        },
-        {
-          "id": "zone-a-mod-3",
-          "label": "8인 워크숍 배치",
-          "imageUrl": "https://picsum.photos/seed/zone-a-m3/600/450"
-        },
-        {
-          "id": "zone-a-mod-4",
-          "label": "발표형 배치",
-          "imageUrl": "https://picsum.photos/seed/zone-a-m4/600/450"
-        },
-        {
-          "id": "zone-a-mod-5",
-          "label": "1:1 미팅 세팅",
-          "imageUrl": "https://picsum.photos/seed/zone-a-m5/600/450"
-        },
-        {
-          "id": "zone-a-current",
-          "label": "현재 공간 이미지",
-          "imageUrl": "https://picsum.photos/seed/zone-a-1/800/600"
-        }
+        { "id": "zone-a-mod-1", "label": "4인 협업 세팅", "imageUrl": "https://picsum.photos/seed/zone-a-m1/600/450" },
+        { "id": "zone-a-mod-2", "label": "6인 라운드 배치", "imageUrl": "https://picsum.photos/seed/zone-a-m2/600/450" },
+        { "id": "zone-a-mod-3", "label": "8인 워크숍 배치", "imageUrl": "https://picsum.photos/seed/zone-a-m3/600/450" },
+        { "id": "zone-a-mod-4", "label": "발표형 배치", "imageUrl": "https://picsum.photos/seed/zone-a-m4/600/450" },
+        { "id": "zone-a-mod-5", "label": "1:1 미팅 세팅", "imageUrl": "https://picsum.photos/seed/zone-a-m5/600/450" },
+        { "id": "zone-a-current", "label": "현재 공간 이미지", "imageUrl": "https://picsum.photos/seed/zone-a-1/800/600" }
       ],
       "products": [
-        {
-          "id": "prod-001",
-          "name": "링크 모듈 테이블",
-          "imageUrl": "https://picsum.photos/seed/prod-001/400/400",
-          "price": 1200000
-        },
-        {
-          "id": "prod-002",
-          "name": "소프트 암체어",
-          "imageUrl": "https://picsum.photos/seed/prod-002/400/400",
-          "price": 890000
-        },
-        {
-          "id": "prod-003",
-          "name": "이동형 파티션",
-          "imageUrl": "https://picsum.photos/seed/prod-003/400/400",
-          "price": 450000
-        }
+        { "id": "prod-001", "name": "링크 모듈 테이블", "imageUrl": "https://picsum.photos/seed/prod-001/400/400", "price": 1200000 },
+        { "id": "prod-002", "name": "소프트 암체어", "imageUrl": "https://picsum.photos/seed/prod-002/400/400", "price": 890000 },
+        { "id": "prod-003", "name": "이동형 파티션", "imageUrl": "https://picsum.photos/seed/prod-003/400/400", "price": 450000 }
       ]
     },
     {
       "id": "zone-b",
-      "label": "B. 포커스 워크존",
-      "position": { "x": 14, "y": 70 },
+      "label": "f. 포커스 워크존",
+      "position": { "x": 19, "y": 65 },
       "images": [
         "https://picsum.photos/seed/zone-b-1/800/600",
         "https://picsum.photos/seed/zone-b-2/800/600"
       ],
+      "layoutImage": "https://picsum.photos/seed/layout-b/800/600",
       "comment": "집중 업무를 위한 개인 워크스테이션 클러스터입니다. 어쿠스틱 패널과 높이 조절 데스크의 조합으로 개인 집중도를 극대화하며, 플로우 상태를 유지할 수 있는 최적의 환경을 제공합니다.",
       "modules": [
-        {
-          "id": "zone-b-mod-1",
-          "label": "2인 집중 세팅",
-          "imageUrl": "https://picsum.photos/seed/zone-b-m1/600/450"
-        },
-        {
-          "id": "zone-b-mod-2",
-          "label": "독립형 스테이션",
-          "imageUrl": "https://picsum.photos/seed/zone-b-m2/600/450"
-        },
-        {
-          "id": "zone-b-mod-3",
-          "label": "스탠딩 데스크 배치",
-          "imageUrl": "https://picsum.photos/seed/zone-b-m3/600/450"
-        },
-        {
-          "id": "zone-b-mod-4",
-          "label": "듀얼 모니터 세팅",
-          "imageUrl": "https://picsum.photos/seed/zone-b-m4/600/450"
-        },
-        {
-          "id": "zone-b-mod-5",
-          "label": "팀 클러스터 배치",
-          "imageUrl": "https://picsum.photos/seed/zone-b-m5/600/450"
-        },
-        {
-          "id": "zone-b-current",
-          "label": "현재 공간 이미지",
-          "imageUrl": "https://picsum.photos/seed/zone-b-1/800/600"
-        }
+        { "id": "zone-b-mod-1", "label": "2인 집중 세팅", "imageUrl": "https://picsum.photos/seed/zone-b-m1/600/450" },
+        { "id": "zone-b-mod-2", "label": "독립형 스테이션", "imageUrl": "https://picsum.photos/seed/zone-b-m2/600/450" },
+        { "id": "zone-b-mod-3", "label": "스탠딩 데스크 배치", "imageUrl": "https://picsum.photos/seed/zone-b-m3/600/450" },
+        { "id": "zone-b-mod-4", "label": "듀얼 모니터 세팅", "imageUrl": "https://picsum.photos/seed/zone-b-m4/600/450" },
+        { "id": "zone-b-mod-5", "label": "팀 클러스터 배치", "imageUrl": "https://picsum.photos/seed/zone-b-m5/600/450" },
+        { "id": "zone-b-current", "label": "현재 공간 이미지", "imageUrl": "https://picsum.photos/seed/zone-b-1/800/600" }
       ],
       "products": [
-        {
-          "id": "prod-004",
-          "name": "높이조절 스탠딩 데스크",
-          "imageUrl": "https://picsum.photos/seed/prod-004/400/400",
-          "price": 1580000
-        },
-        {
-          "id": "prod-005",
-          "name": "어쿠스틱 스크린",
-          "imageUrl": "https://picsum.photos/seed/prod-005/400/400",
-          "price": 320000
-        },
-        {
-          "id": "prod-006",
-          "name": "에르고 체어",
-          "imageUrl": "https://picsum.photos/seed/prod-006/400/400",
-          "price": 1100000
-        }
+        { "id": "prod-004", "name": "높이조절 스탠딩 데스크", "imageUrl": "https://picsum.photos/seed/prod-004/400/400", "price": 1580000 },
+        { "id": "prod-005", "name": "어쿠스틱 스크린", "imageUrl": "https://picsum.photos/seed/prod-005/400/400", "price": 320000 },
+        { "id": "prod-006", "name": "에르고 체어", "imageUrl": "https://picsum.photos/seed/prod-006/400/400", "price": 1100000 }
       ]
     },
     {
       "id": "zone-c",
-      "label": "C. 라운지 존",
-      "position": { "x": 77, "y": 38 },
+      "label": "a. 라운지 존",
+      "position": { "x": 73, "y": 41 },
       "images": [
         "https://picsum.photos/seed/zone-c-1/800/600",
         "https://picsum.photos/seed/zone-c-2/800/600",
         "https://picsum.photos/seed/zone-c-3/800/600"
       ],
+      "layoutImage": "https://picsum.photos/seed/layout-c/800/600",
       "comment": "비공식 커뮤니케이션과 짧은 휴식을 위한 공간입니다. 소프트 시팅과 로우 테이블의 배치가 수평적인 대화 분위기를 조성하고, 조명 디밍 시스템으로 시간대별 분위기 연출이 가능합니다.",
       "modules": [
-        {
-          "id": "zone-c-mod-1",
-          "label": "비공식 미팅 세팅",
-          "imageUrl": "https://picsum.photos/seed/zone-c-m1/600/450"
-        },
-        {
-          "id": "zone-c-mod-2",
-          "label": "소파 라운지 배치",
-          "imageUrl": "https://picsum.photos/seed/zone-c-m2/600/450"
-        },
-        {
-          "id": "zone-c-mod-3",
-          "label": "바 스타일 세팅",
-          "imageUrl": "https://picsum.photos/seed/zone-c-m3/600/450"
-        },
-        {
-          "id": "zone-c-mod-4",
-          "label": "휴게 공간 배치",
-          "imageUrl": "https://picsum.photos/seed/zone-c-m4/600/450"
-        },
-        {
-          "id": "zone-c-mod-5",
-          "label": "팀 소셜 세팅",
-          "imageUrl": "https://picsum.photos/seed/zone-c-m5/600/450"
-        },
-        {
-          "id": "zone-c-current",
-          "label": "현재 공간 이미지",
-          "imageUrl": "https://picsum.photos/seed/zone-c-1/800/600"
-        }
+        { "id": "zone-c-mod-1", "label": "비공식 미팅 세팅", "imageUrl": "https://picsum.photos/seed/zone-c-m1/600/450" },
+        { "id": "zone-c-mod-2", "label": "소파 라운지 배치", "imageUrl": "https://picsum.photos/seed/zone-c-m2/600/450" },
+        { "id": "zone-c-mod-3", "label": "바 스타일 세팅", "imageUrl": "https://picsum.photos/seed/zone-c-m3/600/450" },
+        { "id": "zone-c-mod-4", "label": "휴게 공간 배치", "imageUrl": "https://picsum.photos/seed/zone-c-m4/600/450" },
+        { "id": "zone-c-mod-5", "label": "팀 소셜 세팅", "imageUrl": "https://picsum.photos/seed/zone-c-m5/600/450" },
+        { "id": "zone-c-current", "label": "현재 공간 이미지", "imageUrl": "https://picsum.photos/seed/zone-c-1/800/600" }
       ],
       "products": [
-        {
-          "id": "prod-007",
-          "name": "모듈 소파",
-          "imageUrl": "https://picsum.photos/seed/prod-007/400/400",
-          "price": 2400000
-        },
-        {
-          "id": "prod-008",
-          "name": "오크 커피 테이블",
-          "imageUrl": "https://picsum.photos/seed/prod-008/400/400",
-          "price": 680000
-        }
+        { "id": "prod-007", "name": "모듈 소파", "imageUrl": "https://picsum.photos/seed/prod-007/400/400", "price": 2400000 },
+        { "id": "prod-008", "name": "오크 커피 테이블", "imageUrl": "https://picsum.photos/seed/prod-008/400/400", "price": 680000 }
       ]
     },
     {
       "id": "zone-d",
-      "label": "D. 중역존",
-      "position": { "x": 57, "y": 26 },
+      "label": "b. 중역존",
+      "position": { "x": 52, "y": 20 },
       "images": [
         "https://picsum.photos/seed/zone-d-1/800/600",
         "https://picsum.photos/seed/zone-d-2/800/600"
       ],
+      "layoutImage": "https://picsum.photos/seed/layout-d/800/600",
       "comment": "클라이언트 프레젠테이션과 타운홀 미팅을 위한 다목적 공간입니다. 무선 스크린 연동 시스템과 계단식 좌석 배치로 최대 30인까지 수용 가능하며, 발표자와 청중 간 시선 집중도를 높입니다.",
       "modules": [
-        {
-          "id": "zone-d-mod-1",
-          "label": "임원 회의 세팅",
-          "imageUrl": "https://picsum.photos/seed/zone-d-m1/600/450"
-        },
-        {
-          "id": "zone-d-mod-2",
-          "label": "1:1 상담 배치",
-          "imageUrl": "https://picsum.photos/seed/zone-d-m2/600/450"
-        },
-        {
-          "id": "zone-d-mod-3",
-          "label": "프레젠테이션 배치",
-          "imageUrl": "https://picsum.photos/seed/zone-d-m3/600/450"
-        },
-        {
-          "id": "zone-d-mod-4",
-          "label": "소규모 브리핑",
-          "imageUrl": "https://picsum.photos/seed/zone-d-m4/600/450"
-        },
-        {
-          "id": "zone-d-mod-5",
-          "label": "타운홀 배치",
-          "imageUrl": "https://picsum.photos/seed/zone-d-m5/600/450"
-        },
-        {
-          "id": "zone-d-current",
-          "label": "현재 공간 이미지",
-          "imageUrl": "https://picsum.photos/seed/zone-d-1/800/600"
-        }
+        { "id": "zone-d-mod-1", "label": "임원 회의 세팅", "imageUrl": "https://picsum.photos/seed/zone-d-m1/600/450" },
+        { "id": "zone-d-mod-2", "label": "1:1 상담 배치", "imageUrl": "https://picsum.photos/seed/zone-d-m2/600/450" },
+        { "id": "zone-d-mod-3", "label": "프레젠테이션 배치", "imageUrl": "https://picsum.photos/seed/zone-d-m3/600/450" },
+        { "id": "zone-d-mod-4", "label": "소규모 브리핑", "imageUrl": "https://picsum.photos/seed/zone-d-m4/600/450" },
+        { "id": "zone-d-mod-5", "label": "타운홀 배치", "imageUrl": "https://picsum.photos/seed/zone-d-m5/600/450" },
+        { "id": "zone-d-current", "label": "현재 공간 이미지", "imageUrl": "https://picsum.photos/seed/zone-d-1/800/600" }
       ],
       "products": [
-        {
-          "id": "prod-009",
-          "name": "계단형 트리뷴 벤치",
-          "imageUrl": "https://picsum.photos/seed/prod-009/400/400",
-          "price": 3200000
-        },
-        {
-          "id": "prod-010",
-          "name": "프레젠터 스탠드",
-          "imageUrl": "https://picsum.photos/seed/prod-010/400/400",
-          "price": 420000
-        }
+        { "id": "prod-009", "name": "계단형 트리뷴 벤치", "imageUrl": "https://picsum.photos/seed/prod-009/400/400", "price": 3200000 },
+        { "id": "prod-010", "name": "프레젠터 스탠드", "imageUrl": "https://picsum.photos/seed/prod-010/400/400", "price": 420000 }
+      ]
+    },
+    {
+      "id": "zone-e",
+      "label": "c. 오픈 워크존",
+      "position": { "x": 45, "y": 35 },
+      "images": [
+        "https://picsum.photos/seed/zone-e-1/800/600",
+        "https://picsum.photos/seed/zone-e-2/800/600"
+      ],
+      "layoutImage": "https://picsum.photos/seed/layout-e/800/600",
+      "comment": "개방형 팀 업무 공간으로, 유연한 좌석 배치와 자연광이 어우러진 환경입니다. 팀 간 경계를 최소화한 레이아웃으로 자발적인 협업과 정보 공유를 촉진하며, 역동적인 업무 리듬을 지원합니다.",
+      "modules": [
+        { "id": "zone-e-mod-1", "label": "팀 오픈 배치", "imageUrl": "https://picsum.photos/seed/zone-e-m1/600/450" },
+        { "id": "zone-e-mod-2", "label": "애자일 스쿼드 세팅", "imageUrl": "https://picsum.photos/seed/zone-e-m2/600/450" },
+        { "id": "zone-e-mod-3", "label": "핫데스킹 배치", "imageUrl": "https://picsum.photos/seed/zone-e-m3/600/450" },
+        { "id": "zone-e-mod-4", "label": "스탠딩 협업 세팅", "imageUrl": "https://picsum.photos/seed/zone-e-m4/600/450" },
+        { "id": "zone-e-mod-5", "label": "프로젝트 룸 세팅", "imageUrl": "https://picsum.photos/seed/zone-e-m5/600/450" },
+        { "id": "zone-e-current", "label": "현재 공간 이미지", "imageUrl": "https://picsum.photos/seed/zone-e-1/800/600" }
+      ],
+      "products": [
+        { "id": "prod-011", "name": "벤치형 공유 테이블", "imageUrl": "https://picsum.photos/seed/prod-011/400/400", "price": 980000 },
+        { "id": "prod-012", "name": "태스크 체어", "imageUrl": "https://picsum.photos/seed/prod-012/400/400", "price": 650000 },
+        { "id": "prod-013", "name": "모바일 화이트보드", "imageUrl": "https://picsum.photos/seed/prod-013/400/400", "price": 380000 }
+      ]
+    },
+    {
+      "id": "zone-f",
+      "label": "d. 미팅존",
+      "position": { "x": 44, "y": 52 },
+      "images": [
+        "https://picsum.photos/seed/zone-f-1/800/600",
+        "https://picsum.photos/seed/zone-f-2/800/600"
+      ],
+      "layoutImage": "https://picsum.photos/seed/layout-f/800/600",
+      "comment": "소규모 팀 미팅과 빠른 의사결정을 위한 집중 회의 공간입니다. 필요에 따라 개방형·폐쇄형으로 전환되는 파티션 시스템과 무선 디스플레이 연동으로 효율적인 회의 환경을 제공합니다.",
+      "modules": [
+        { "id": "zone-f-mod-1", "label": "4인 스탠다드 세팅", "imageUrl": "https://picsum.photos/seed/zone-f-m1/600/450" },
+        { "id": "zone-f-mod-2", "label": "6인 확장 배치", "imageUrl": "https://picsum.photos/seed/zone-f-m2/600/450" },
+        { "id": "zone-f-mod-3", "label": "화상회의 세팅", "imageUrl": "https://picsum.photos/seed/zone-f-m3/600/450" },
+        { "id": "zone-f-mod-4", "label": "스탠딩 미팅 배치", "imageUrl": "https://picsum.photos/seed/zone-f-m4/600/450" },
+        { "id": "zone-f-mod-5", "label": "보드룸 세팅", "imageUrl": "https://picsum.photos/seed/zone-f-m5/600/450" },
+        { "id": "zone-f-current", "label": "현재 공간 이미지", "imageUrl": "https://picsum.photos/seed/zone-f-1/800/600" }
+      ],
+      "products": [
+        { "id": "prod-014", "name": "미팅 테이블", "imageUrl": "https://picsum.photos/seed/prod-014/400/400", "price": 1450000 },
+        { "id": "prod-015", "name": "컨퍼런스 체어", "imageUrl": "https://picsum.photos/seed/prod-015/400/400", "price": 520000 },
+        { "id": "prod-016", "name": "무선 디스플레이 스탠드", "imageUrl": "https://picsum.photos/seed/prod-016/400/400", "price": 890000 }
       ]
     }
   ]
