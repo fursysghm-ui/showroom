@@ -78,7 +78,7 @@
       "label": "b. 중역존",
       "position": { "x": 52, "y": 20 },
       "images": [
-        "https://picsum.photos/seed/zone-d-1/800/600",
+        "/zone-d-current.jpg",
         "https://picsum.photos/seed/zone-d-2/800/600"
       ],
       "layoutImage": "https://picsum.photos/seed/layout-d/800/600",
@@ -92,8 +92,12 @@
         { "id": "zone-d-current", "label": "현재 공간 이미지", "imageUrl": "/zone-d-current.jpg" }
       ],
       "products": [
-        { "id": "prod-009", "name": "계단형 트리뷴 벤치", "imageUrl": "https://picsum.photos/seed/prod-009/400/400", "price": 3200000 },
-        { "id": "prod-010", "name": "프레젠터 스탠드", "imageUrl": "https://picsum.photos/seed/prod-010/400/400", "price": 420000 }
+        { "id": "prod-009", "name": "임원 데스크", "imageUrl": "/zone-d-prod-1.jpg", "price": 3200000 },
+        { "id": "prod-010", "name": "월 스토리지", "imageUrl": "/zone-d-prod-2.jpg", "price": 1800000 },
+        { "id": "prod-011", "name": "데스크 파워탭", "imageUrl": "/zone-d-prod-3.jpg", "price": 120000 },
+        { "id": "prod-012", "name": "임원 체어", "imageUrl": "/zone-d-prod-4.jpg", "price": 2400000 },
+        { "id": "prod-013", "name": "미팅 체어", "imageUrl": "/zone-d-prod-5.jpg", "price": 980000 },
+        { "id": "prod-014", "name": "라운지 체어", "imageUrl": "/zone-d-prod-6.jpg", "price": 1600000 }
       ]
     },
     {
