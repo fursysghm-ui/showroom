@@ -89,7 +89,7 @@
         { "id": "zone-d-mod-3", "label": "프레젠테이션 배치", "imageUrl": "https://picsum.photos/seed/zone-d-m3/600/450" },
         { "id": "zone-d-mod-4", "label": "소규모 브리핑", "imageUrl": "https://picsum.photos/seed/zone-d-m4/600/450" },
         { "id": "zone-d-mod-5", "label": "타운홀 배치", "imageUrl": "https://picsum.photos/seed/zone-d-m5/600/450" },
-        { "id": "zone-d-current", "label": "현재 공간 이미지", "imageUrl": "https://picsum.photos/seed/zone-d-1/800/600" }
+        { "id": "zone-d-current", "label": "현재 공간 이미지", "imageUrl": "/zone-d-current.jpg" }
       ],
       "products": [
         { "id": "prod-009", "name": "계단형 트리뷴 벤치", "imageUrl": "https://picsum.photos/seed/prod-009/400/400", "price": 3200000 },
