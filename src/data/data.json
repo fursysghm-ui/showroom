@@ -81,8 +81,8 @@
         "/zone-d-current.jpg",
         "https://picsum.photos/seed/zone-d-2/800/600"
       ],
-      "layoutImage": "https://picsum.photos/seed/layout-d/800/600",
-      "comment": "클라이언트 프레젠테이션과 타운홀 미팅을 위한 다목적 공간입니다. 무선 스크린 연동 시스템과 계단식 좌석 배치로 최대 30인까지 수용 가능하며, 발표자와 청중 간 시선 집중도를 높입니다.",
+      "layoutImage": "/zone-d-layout.jpg",
+      "comment": "모던하고 정갈한 모노톤 가구 배치와 감각적인 간접 조명 설계를 통해 최고 경영자의 권위와 심리적 안정감을 동시에 확보한 공간입니다. 전면 통창을 통한 개방감을 극대화하면서도 대면 미팅과 개인 업무 공간의 동선을 효율적으로 분리하여 집무 몰입도를 높였습니다.",
       "modules": [
         { "id": "zone-d-mod-1", "label": "임원 회의 세팅", "imageUrl": "https://picsum.photos/seed/zone-d-m1/600/450" },
         { "id": "zone-d-mod-2", "label": "1:1 상담 배치", "imageUrl": "https://picsum.photos/seed/zone-d-m2/600/450" },
