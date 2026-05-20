@@ -67,7 +67,7 @@ export default function ZoneDetailPage({ zone, onBack }) {
             <p className="text-[11px] font-semibold text-[#515151] tracking-widest uppercase mb-4">
               이 공간을 구성하는 가구
             </p>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-6 gap-2">
               {products.map((product) => (
                 <ProductCard
                   key={product.id}
